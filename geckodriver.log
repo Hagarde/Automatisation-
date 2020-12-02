@@ -1,0 +1,64 @@
+1595022058214	geckodriver	INFO	geckodriver 0.19.1
+1595022058220	geckodriver	INFO	Listening on 127.0.0.1:57008
+1595022058574	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/29/wsnz2b1n0tn6x4lg0bcbry340000gn/T/rust_mozprofile.n8zI5Fikt9mm"
+1595022060761	Marionette	TRACE	Marionette enabled
+1595022060977	Marionette	TRACE	Received observer notification toplevel-window-ready
+1595022063420	Marionette	TRACE	Received observer notification marionette-startup-requested
+1595022063420	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1595022063435	Marionette	TRACE	All scripts recorded.
+1595022063435	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1595022063436	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1595022063436	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1595022063436	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1595022063436	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1595022063436	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1595022063436	Marionette	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1595022063436	Marionette	DEBUG	Setting recommended pref extensions.getAddons.discovery.api_url to data:, 
+1595022063436	Marionette	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1595022063436	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1595022063437	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1595022063484	Marionette	INFO	Listening on port 57017
+1595022063484	Marionette	DEBUG	Marionette is listening
+1595022179147	geckodriver	INFO	geckodriver 0.19.1
+1595022179151	geckodriver	INFO	Listening on 127.0.0.1:57063
+1595022179377	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/29/wsnz2b1n0tn6x4lg0bcbry340000gn/T/rust_mozprofile.D0UB6STquUbI"
+1595022179908	Marionette	TRACE	Marionette enabled
+1595022180009	Marionette	TRACE	Received observer notification toplevel-window-ready
+1595022181217	Marionette	TRACE	Received observer notification marionette-startup-requested
+1595022181217	Marionette	TRACE	Waiting until startup recorder finished recording startup scripts...
+1595022181223	Marionette	TRACE	All scripts recorded.
+1595022181224	Marionette	DEBUG	Setting recommended pref app.update.disabledForTesting to true
+1595022181224	Marionette	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1595022181224	Marionette	DEBUG	Setting recommended pref browser.tabs.remote.separatePrivilegedContentProcess to false
+1595022181224	Marionette	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1595022181224	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1595022181225	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1595022181225	Marionette	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1595022181225	Marionette	DEBUG	Setting recommended pref extensions.getAddons.discovery.api_url to data:, 
+1595022181225	Marionette	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1595022181225	Marionette	DEBUG	Setting recommended pref security.certerrors.mitm.priming.enabled to false
+1595022181225	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1595022181257	Marionette	INFO	Listening on port 57073
+1595022181257	Marionette	DEBUG	Marionette is listening
+1595022181356	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:57131
+1595022181357	Marionette	DEBUG	0 -> [0,1,"newSession",{"acceptInsecureCerts":true,"browserName":"firefox","capabilities":{"desiredCapabilities":{"acceptInsecureCerts":true,"browserName":"firefox"}}}]
+1595022181357	Marionette	DEBUG	0 <- [1,1,{"error":"unknown command","message":"newSession","stacktrace":"WebDriverError@chrome://marionette/content/error.js:175: ... t@chrome://marionette/content/server.js:249:9\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:501:20\n"},null]
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1595057235190	Marionette	TRACE	Received observer notification xpcom-will-shutdown
+1595057235191	Marionette	DEBUG	Resetting recommended pref app.update.disabledForTesting
+1595057235191	Marionette	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1595057235191	Marionette	DEBUG	Resetting recommended pref browser.tabs.remote.separatePrivilegedContentProcess
+1595057235191	Marionette	DEBUG	Resetting recommended pref browser.tabs.unloadOnLowMemory
+1595057235191	Marionette	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1595057235191	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1595057235191	Marionette	DEBUG	Resetting recommended pref dom.push.connection.enabled
+1595057235191	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.discovery.api_url
+1595057235192	Marionette	DEBUG	Resetting recommended pref privacy.trackingprotection.enabled
+1595057235192	Marionette	DEBUG	Resetting recommended pref security.certerrors.mitm.priming.enabled
+1595057235192	Marionette	DEBUG	Resetting recommended pref toolkit.cosmeticAnimations.enabled
+1595057235193	Marionette	INFO	Stopped listening on port 57017
+1595057235194	Marionette	DEBUG	Marionette stopped listening
