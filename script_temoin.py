@@ -19,9 +19,9 @@ def check_play():
         pass
 def check_repeat():
     try:
-        if driver.find_elements_by_css_selector("button[class='control-button spoticon-repeat-16']") != [] :
-            etat_no_repeat = driver.find_element_by_css_selector("button[class='control-button spoticon-repeat-16']")
-            etat_no_repeat.click()
+        bouton_repeat = driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/div[3]/footer/div/div[2]/div/div[1]/button[5]')
+        if (bouton_repeat.get_attribute("checked") != "true"):
+            bouton_repeat.click()
     except Exception:
         pass   
 def check_time():
