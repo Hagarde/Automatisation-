@@ -20,7 +20,7 @@ def check_play():
 def check_repeat():
     try:
         bouton_repeat = driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/div[3]/footer/div/div[2]/div/div[1]/button[5]')
-        if (bouton_repeat.get_attribute("checked") != "true"):
+        if (bouton_repeat.get_attribute("aria-checked") != "true"):
             bouton_repeat.click()
     except Exception:
         pass   
