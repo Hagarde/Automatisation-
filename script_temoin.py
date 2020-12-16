@@ -33,10 +33,25 @@ def refresh():
     threading.Timer(3600.0, refresh).start()
     driver.refresh()
 
+def accept_cookies():
+    bouton_cookies = driver.find_element_by_xpath('/html/body/div[12]/div[3]/div/div/div[2]/div/button[1]')
+    if (bouton_cookies):
+        bouton_cookies.click()
+
+def service_test():
+    bouton_fermer = driver.find_element_by_xpath('/html/body/div[3]/div/div[3]/div/div[2]/button')
+    if (bouton_fermer):
+        bouton_fermer.click()
+        
 # 2 phase de navigation
 def navi (email, password):
     # veuillez renseignez votre playlist spotify dans les guillemets
     driver.get("votre playlist spotify")
+    time.sleep(1)
+
+    accept_cookies()
+    time.sleep(1)
+    service_test()
     time.sleep(1)
 
     bouton_login = driver.find_element_by_xpath('/html/body/div[3]/div/div[2]/div[1]/header/div[5]/button[2]')
