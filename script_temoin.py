@@ -34,13 +34,13 @@ def refresh():
     driver.refresh()
 
 def accept_cookies():
-    bouton_cookies = driver.find_element_by_xpath('/html/body/div[12]/div[3]/div/div/div[2]/div/button[1]')
-    if (bouton_cookies):
+    if (driver.find_elements_by_xpath('/html/body/div[12]/div[3]/div/div/div[2]/div/button[1]') != []):
+        bouton_cookies = driver.find_element_by_xpath('/html/body/div[12]/div[3]/div/div/div[2]/div/button[1]')
         bouton_cookies.click()
 
 def service_test():
-    bouton_fermer = driver.find_element_by_xpath('/html/body/div[3]/div/div[3]/div/div[2]/button')
-    if (bouton_fermer):
+    if (driver.find_elements_by_xpath('/html/body/div[3]/div/div[3]/div/div[2]/button') != []):
+        bouton_fermer = driver.find_element_by_xpath('/html/body/div[3]/div/div[3]/div/div[2]/button')
         bouton_fermer.click()
         
 # 2 phase de navigation
