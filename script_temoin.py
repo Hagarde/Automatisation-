@@ -75,11 +75,13 @@ def navi (email, password):
     bouton_play = driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/div[4]/main/div[2]/div[2]/div/div/div[2]/section/div[2]/div[2]/div/button[1]')
     bouton_play.click()
     
-options = Options()
-options.add_experimental_option('useAutomationExtension', False)
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_experimental_option('useAutomationExtension', False)
 # veuillez renseigner votre chemin vers votre chromedriver dans les guillemets
 # exemple : 'C:/Votre chemin/chromedriver.exe'
-driver = webdriver.Chrome('path vers chromedriver.exe', options=options)
+chrome_options.add_argument("--incognito")
+chrome_options.add_experimental_option('useAutomationExtension', False)
+driver = webdriver.Chrome('/Users/aveyronvictor/Documents/GINFO/Automatisation-/chromedriver', options=chrome_options)
 
 # où comme cela:
 # driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
