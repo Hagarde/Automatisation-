@@ -11,7 +11,7 @@ import time
 import threading
 def check_play():
     try:  
-        bouton_play = driver.find_element_by_xpath("/html/body/div[4]/div/div[2]/div[4]/main/div[2]/div[2]/div/div/div[2]/section/div[2]/div[2]/div/button[1]")
+        bouton_play = driver.find_element_by_xpath("/html/body/div[4]/div/div[2]/div[3]/main/div[2]/div[2]/div/div/div[2]/section/div[2]/div[2]/div/button[1]")
         bouton_play_mode = bouton_play.get_attribute("title")
         if (bouton_play_mode == "Lecture"):
             bouton_play.click()
@@ -19,7 +19,7 @@ def check_play():
         pass
 def check_repeat():
     try:
-        bouton_repeat = driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/div[3]/footer/div/div[2]/div/div[1]/button[5]')
+        bouton_repeat = driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/div[2]/footer/div/div[2]/div/div[1]/button[5]')
         if (bouton_repeat.get_attribute("aria-checked") != "true"):
             bouton_repeat.click()
     except Exception:
@@ -72,7 +72,7 @@ def navi (email, password):
 
     time.sleep(2)
 
-    bouton_play = driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/div[4]/main/div[2]/div[2]/div/div/div[2]/section/div[2]/div[2]/div/button[1]')
+    bouton_play = driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/div[3]/main/div[2]/div[2]/div/div/div[2]/section/div[2]/div[2]/div/button[1]')
     bouton_play.click()
     
 options = Options()
